@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <nav class="container">
+        <ul>
+          <li><strong>URL Shortener</strong></li>
+        </ul>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about" role="button">About</a></li>
+        </ul>
+      </nav>
+      <main class="container">
+        {% block main %}{% endblock %}
+      </main>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+    <h3>URL Shortener</h3>
+    {% if link %}
+        <p>{{ link }}</p>
+        <p>{{short}}</p>
+    {% endif %}
+    <form method="POST" action="">
+        <!-- Markup example 2: input is after label -->
+        <label for="email">URL Link</label>
+        <input type="URL" id="link" name="link" placeholder="URL Link" required>
+        <small>Input you Link...</small>
+
+        <!-- Button -->
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
